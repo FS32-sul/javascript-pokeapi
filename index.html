@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-red-500">
+
+    <header class="flex justify-between items-center py-4 px-15">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/3840px-International_Pok%C3%A9mon_logo.svg.png"
+            alt="" class="w-[200px]">
+
+        <div class="w-100 bg-white rounded-[50px] flex p-3 items-center gap-4">
+            <input type="text" class="flex-1 h-10 outline-none pl-4" placeholder="Pesquisar pokemon...">
+            <button class="w-10 h-10 bg-red-500 flex justify-center items-center fill-white p-3 rounded-full">
+                <box-icon name='search'></box-icon>
+            </button>
+        </div>
+
+        <div class="bg-white p-3 rounded-xl">
+            <select class="outline-none">
+                <option disabled selected>Filtrar por tipo</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="grade" class="grid gap-10 grid-cols-5 p-15">
+            <div class="bg-white rounded-xl p-4 flex flex-col items-center">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="w-40">
+                <h6 class="text-lg font-bold">Bulbasur</h6>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
